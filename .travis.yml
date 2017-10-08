@@ -7,15 +7,24 @@ cache:
 script:
   - npm test
   - npm run build
-before_deploy:
-  - pip install --user awscli
-  - export PATH=$PATH:$HOME/.local/bin
 deploy:
-  - provider: script
-    script: aws s3 sync build/ s3://$STAGING_BUCKET_NAME
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    bucket: $STAGING_BUCKET_NAME
+    skip_cleanup: true
+    acl: public_read
+    region: us-east-1
+    local_dir: build
     on:
       branch: release
-  - provider: script
-    script: aws s3 sync build/ s3://$PROD_BUCKET_NAME
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    bucket: $PROD_BUCKET_NAME
+    skip_cleanup: true
+    acl: public_read
+    region: us-east-1
+    local_dir: build
     on:
       branch: master
