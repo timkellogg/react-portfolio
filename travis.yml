@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+script:
+  - npm test
+  - npm run build
+before_deploy:
+  - pip install --user awscli
+  - export PATH=$PATH:$HOME/.local/bin
+deploy:
+  - provider: script
+    script: aws s3 sync build/ s3://$STAGING_BUCKET_NAME
+    on:
+      branch: release
+  - provider: script
+    script: aws s3 sync build/ s3://$PROD_BUCKET_NAME
+    on:
+      branch: master
