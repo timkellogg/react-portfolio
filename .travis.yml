@@ -1,0 +1,30 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+script:
+  - npm test
+  - npm run build
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    bucket: $STAGING_BUCKET_NAME
+    skip_cleanup: true
+    acl: public_read
+    region: us-east-1
+    local_dir: build
+    on:
+      branch: release
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    bucket: $PROD_BUCKET_NAME
+    skip_cleanup: true
+    acl: public_read
+    region: us-east-1
+    local_dir: build
+    on:
+      branch: master
