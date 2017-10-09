@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from 'react';
 import './ProjectList.css';
 import fitnessImg from './img/fitness.jpg';
@@ -7,7 +9,7 @@ import povertyImg from './img/poverty.jpg';
 import burgerImg from './img/burger.jpg';
 import shaveImg from './img/shave.jpg';
 
-class ProjectList extends Component {
+export default class ProjectList extends Component {
   render() {
     return (
       <section className="ProjectList">
@@ -37,5 +39,3 @@ class ProjectList extends Component {
     );
   }
 }
-
-export default ProjectList;

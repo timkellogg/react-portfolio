@@ -16,6 +16,60 @@
   border-left: 1px solid black;
 }
 
-.Header-title:first-of-type {
+.Header-title:nth-child(1) {
+  margin-top: -100vh;
+  animation: .75s ease-in slideDown .25s forwards;
+}
+
+.Header-title:nth-child(2) {
   margin-bottom: -1vw;
+  margin-left: -70vw;
+  animation: .75s ease-in slideRight .75s forwards;
+}
+
+.Header-spacer {
+  opacity: 0;
+  animation: .25s ease-in fadeIn 2s forwards;
+}
+
+.Header-spacer:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.Header-spacer:nth-child(2) {
+  animation-delay: 2.5s;
+}
+
+.Header-spacer:nth-child(3) {
+  animation-delay: 2.75s;
+}
+
+.Header-subtitle {
+  margin-right: -100vw;
+  opacity: 0;
+  animation: .75s ease-in fadeIn 4s forwards;
+}
+
+@keyframes slideDown {
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes slideRight {
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes slideLeft {
+  to {
+    margin-right: 0;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
