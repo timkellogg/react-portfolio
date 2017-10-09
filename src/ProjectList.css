@@ -1,0 +1,42 @@
+.ProjectList {
+  text-align: right;
+  display: inline-block;
+  height: 100%;
+  background-color: rgb(253, 237, 234);
+  width: 50%;
+  padding-right: 5vw;
+}
+
+.ProjectList-Content {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ProjectList-List {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.ProjectList-Item {
+  width: 44%;
+  margin-bottom: 0vw;
+}
+
+.ProjectList-Item:nth-child(odd) {
+  margin-left: 2vw;
+}
+
+.ProjectList-Item:nth-child(even) {
+  margin-right: 2vw;
+}
+
+.ProjectList-Img {
+  max-width: 100%;
+  transform: scale(.95);
+}
