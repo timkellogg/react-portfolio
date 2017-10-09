@@ -16,3 +16,11 @@ h1 {
   font-size: 72px;
   text-transform: uppercase;
 }
+
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}

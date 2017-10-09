@@ -1,8 +1,9 @@
 // @flow
 import React from 'react';
-import ProjectList from './ProjectList';
-import Header from './Header';
 import './App.css';
+
+import ProjectList from './ProjectList';
+import Header      from './Header';
 
 export default () => {
   return (
