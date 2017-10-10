@@ -1,0 +1,24 @@
+.Navbar {
+  position: absolute;
+  top: 100px;
+  margin-left: 5vw;
+  opacity: 0;
+  animation: .75s ease-in fadeIn 4.5s forwards;
+}
+
+.Navbar-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 100;
+  margin-right: 1.25vw;
+}
+
+.Navbar-link:hover {
+  text-decoration: line-through;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
