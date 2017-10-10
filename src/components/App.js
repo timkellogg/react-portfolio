@@ -15,6 +15,4 @@ export default () => {
     </div>
   )
 }
-
-{/*<RightPanel></RightPanel>
-<LeftPanel></LeftPanel>*/}*/
+*/
