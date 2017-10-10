@@ -13,7 +13,7 @@ import shaveImg   from '../assets/img/shave.jpg';
 export default () => {
   return (
     <section className="ProjectList">
-      <div className="ProjectList-Content">
+      <div className="panel-content">
         <div className="ProjectList-List">
           <div className="ProjectList-Item">
               <img className="ProjectList-Img" src={fitnessImg} alt="stationary cycles"/>

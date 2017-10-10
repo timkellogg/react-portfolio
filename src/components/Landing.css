@@ -1,1 +1,26 @@
-.Landing {}
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 300;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+h1 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 72px;
+  text-transform: uppercase;
+}
+
+/*.Landing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}*/

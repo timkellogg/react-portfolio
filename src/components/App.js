@@ -1,4 +1,4 @@
-// @flow
+/*// @flow
 import React from 'react';
 import './App.css';
 
@@ -15,3 +15,6 @@ export default () => {
     </div>
   )
 }
+
+{/*<RightPanel></RightPanel>
+<LeftPanel></LeftPanel>*/}*/

@@ -1,1 +1,36 @@
-.Contact {}
+.Contact-form {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  width: 40vw;
+}
+
+input {
+  height: 14px;
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 104%;
+  display: inline-block;
+  height: 20vw;
+}
+
+label {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+button {
+  border-radius: 0;
+  border: none;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 10px 30px;
+  margin-top: 10px;
+}

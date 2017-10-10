@@ -1,9 +1,8 @@
 .Navbar {
   position: absolute;
   top: 100px;
-  margin-left: 5vw;
   opacity: 0;
-  animation: .75s ease-in fadeIn 4.5s forwards;
+  animation: .25s ease-in fadeIn 4.5s forwards;
 }
 
 .Navbar-link {

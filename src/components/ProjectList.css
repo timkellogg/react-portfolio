@@ -1,18 +1,9 @@
-.ProjectList {
-  text-align: right;
-  display: inline-block;
-  height: 100%;
-  background-color: rgb(253, 237, 234);
-  width: 50%;
-  padding-right: 5vw;
-}
-
-.ProjectList-Content {
+/*.ProjectList-Content {
   text-align: left;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}
+}*/
 
 .ProjectList-List {
   display: flex;
