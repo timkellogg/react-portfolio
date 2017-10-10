@@ -12,14 +12,16 @@ export default () => {
         <h1>Need a website?</h1>
       </section>
       <section className="panel--right">
-        <form className="Contact-form panel-content">
-          <h2>Contact</h2>
+        <form action="https://somepage/messages" method="post" className="Contact-form panel-content">
           <label for="name">Name</label><br />
           <input name="name" required type="text" /><br />
 
+          <label for="email">Email:</label><br />
+          <input name="email" required type="email" /><br />
+
           <label for="message">Message</label><br />
           <textarea name="message" required></textarea><br />
-          <button type="submit">contact</button>
+          <button type="submit">Send</button>
         </form>
       </section>
     </main>
