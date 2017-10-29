@@ -17,7 +17,7 @@ export default class Contact extends Component {
   }
 
   onSubmit(event) {
-    const endpoint = 'https://thawing-citadel-96572.herokuapp.com/'
+    const endpoint = 'https://thawing-citadel-96572.herokuapp.com/contacts'
     // const endpoint = 'http://localhost:3000/contacts';
     const { name, email, message } = this.state;
 
