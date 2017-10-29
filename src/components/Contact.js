@@ -17,7 +17,8 @@ export default class Contact extends Component {
   }
 
   onSubmit(event) {
-    const endpoint = 'http://localhost:3000/contacts';
+    const endpoint = 'https://thawing-citadel-96572.herokuapp.com/'
+    // const endpoint = 'http://localhost:3000/contacts';
     const { name, email, message } = this.state;
 
     event.preventDefault();
@@ -44,7 +45,7 @@ export default class Contact extends Component {
             <label for="name">Name</label><br />
             <input name="name" value={this.state.name.value} onChange={this.onChange.bind(this)} type="text" /><br />
 
-            <label for="email">Email:</label><br />
+            <label for="email">Email</label><br />
             <input name="email" value={this.state.email.value} onChange={this.onChange.bind(this)} type="email" /><br />
 
             <label for="message">Message</label><br />
